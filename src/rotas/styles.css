@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F5F7FA;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .cards, .energy-balance, .main-charts, .status-indicators {
+    flex-direction: column;
+  }
+
+  .App {
+    flex-direction: column;
+  }
+
+  .header, .sidebar {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none; /* Pode adicionar um botão para expandir no mobile */
+  }
+}

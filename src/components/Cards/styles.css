@@ -1,0 +1,33 @@
+.cards {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #F5F7FA;
+    padding-left: 260px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+  }
+  
+  .card h3 {
+    color: #0F403F;
+    font-size: 16px;
+  }
+  
+  .card h2 {
+    color: #39B085;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    color: #888;
+    font-size: 14px;
+  }
+  

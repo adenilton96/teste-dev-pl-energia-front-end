@@ -1,0 +1,86 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #072b25;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar .logo {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.sidebar .logo img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar .nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 500px;
+}
+
+.sidebar .nav-menu li {
+    padding: 15px 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar .nav-menu li:hover {
+    background-color: #0b4037;
+    border-left: 4px solid #00b689;
+}
+
+.sidebar .nav-menu li.active {
+    background-color: #00b689;
+    border-left: none;
+}
+
+.sidebar .nav-menu li i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.sidebar .settings {
+    padding: 15px 20px;
+    border-top: 1px solid #104f45;
+}
+
+.sidebar .settings li {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar .settings li i {
+    margin-right: 15px;
+}
+
+.sidebar .footer {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.sidebar .footer i {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.link{
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Usa a cor definida pelo elemento pai */
+    
+}
