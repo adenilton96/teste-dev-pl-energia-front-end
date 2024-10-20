@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Teste Dev PL Lumi - Front-End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação web que exibe demonstrativos em gráficos e cards, além de oferecer uma biblioteca de faturas, permitindo que os usuários baixem suas faturas de energia elétrica. A aplicação é desenvolvida em React e utiliza a biblioteca Chart.js para renderização de gráficos. 
+ela ituliza de uma api que esta disponivel no git https://github.com/adenilton96/Teste-Dev-PL-Lumi
 
-## Available Scripts
+## Estrutura do Projeto
 
-In the project directory, you can run:
+A estrutura do projeto é a seguinte:
 
-### `npm start`
+    ├───node_modules
+    ├───public
+    ├───components
+    │   ├───AreaChart
+    │   ├───BarChart
+    │   ├───Cards
+    │   ├───Dashboard
+    │   ├───EnergyBalance
+    │   ├───Header
+    │   ├───Invoice
+    │   ├───InvoiceGrid
+    │   └───Sidebar
+    ├───img
+    ├───rotas
+    └───servicos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: biblioteca JavaScript para construção de interfaces de usuário.
+- **Chart.js**: biblioteca para gráficos.
+- **Axios**: biblioteca para fazer requisições HTTP.
 
-### `npm test`
+## Dependências
+As dependências do projeto estão listadas no `package.json`:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```json
+    {
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "axios": "^1.7.7",
+        "chart.js": "^4.4.5",
+        "react": "^18.3.1",
+        "react-chartjs-2": "^5.2.0",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.27.0",
+        "react-scripts": "5.0.1",
+        "web-vitals": "^2.1.4"
+    }
+    }
 
-### `npm run build`
+## Scripts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Os seguintes scripts estão disponíveis para facilitar o desenvolvimento:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **npm start*: Inicia a aplicação em modo de desenvolvimento.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instalação
 
-### `npm run eject`
+Para instalar as dependências do projeto, execute o seguinte comando:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm install
+    
+1. Clone o repositório
+   
+   ```bash
+    git clone https://github.com/adenilton96/teste-dev-pl-lumi-front-end
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Navegue até o diretório do projeto:
+    
+    ```bash
+    cd teste-dev-pl-lumi-front-end
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Instale as dependências:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    npm install
 
-## Learn More
+4.Inicie a aplicação:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash 
+    npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Observação 
 
-### Code Splitting
+Pra utiliza este projetio e nessesario fazer o instalação e subir a API na porta **8000**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+O codigo da API esta no git **https://github.com/adenilton96/Teste-Dev-PL-Lumi** 
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
