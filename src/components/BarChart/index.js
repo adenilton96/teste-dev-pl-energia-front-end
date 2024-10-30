@@ -43,7 +43,7 @@ const BarChart = () => {
           economia.novembro || 0,
           economia.dezembro || 0,
         ],
-        backgroundColor: 'rgba(153, 102, 255, 0.6)',
+        backgroundColor: 'rgba(0, 182, 137, 0.6)',
       },
     ],
   };

@@ -116,7 +116,6 @@ async function getResultadoEnergiaFinanceirosMes() {
             };
         })
     );
-
     return Object.fromEntries(dadosCalculado.map(item => [item.mes, item.dados]));
 }
 
@@ -124,8 +123,8 @@ async function getResultadoEnergiaFinanceirosMes() {
 async function getResultadoEnergia() {
     const dados = await getResultadoEnergiaFinanceirosMes();
     return Object.entries(dados).reduce((acc, [mes, elementos]) => {
-        acc.dadosConsumo[mes] = formatarNumero(elementos.consumo_energia);
-        acc.dadosCompesado[mes] = formatarNumero(elementos.energia_compensada);
+        acc.dadosConsumo[mes] = elementos.consumo_energia;
+        acc.dadosCompesado[mes] = elementos.energia_compensada;
         return acc;
     }, { dadosConsumo: {}, dadosCompesado: {} });
 }
@@ -134,8 +133,8 @@ async function getResultadoEnergia() {
 async function getResulFinanceiro() {
     const dados = await getResultadoEnergiaFinanceirosMes();
     return Object.entries(dados).reduce((acc, [mes, elementos]) => {
-        acc.valorTotal[mes] = formatarNumero(Math.abs(elementos.valor_total));
-        acc.valorEconomia[mes] = formatarNumero(Math.abs(elementos.valor_economia));
+        acc.valorTotal[mes] = Math.abs(elementos.valor_total);
+        acc.valorEconomia[mes] = Math.abs(elementos.valor_economia);
         return acc;
     }, { valorTotal: {}, valorEconomia: {} });
 }
@@ -159,7 +158,6 @@ async function getfaturasClientes(idCliente = null) {
             clientes[numeroCliente].meses[mesIndex] = element.mes_referencia; 
         }
     });
-    
     return Object.values(clientes); 
 }
 

@@ -16,7 +16,7 @@ const AreaChart = () => {
     labels: labels,
     datasets: [
       {
-        label: 'Consumo de Energia Elétrica (KWh)',
+        label: 'Consumo de Energia El\u00E9trica (KWh)',
         data: [
           dadosConsumo.janeiro || 0,
           dadosConsumo.fevereiro || 0,
@@ -32,8 +32,8 @@ const AreaChart = () => {
           dadosConsumo.dezembro || 0,
         ],
         fill: true,
-        backgroundColor: 'rgba(75, 192, 192, 0.2)',
-        borderColor: 'rgba(75, 192, 192, 1)',
+        backgroundColor: 'rgba(255, 159, 64, 0.3)',
+        borderColor: 'rgba(255, 159, 64, 1)',
         tension: 0.4,
       },
       {
@@ -53,8 +53,8 @@ const AreaChart = () => {
           dadosCompensado.dezembro || 0,
         ],
         fill: true,
-        backgroundColor: 'rgba(153, 102, 255, 0.2)',
-        borderColor: 'rgba(153, 102, 255, 1)',
+        backgroundColor: 'rgba(0, 182, 137, 0.4)',
+        borderColor: 'rgba(0, 182, 137, 1)',
         tension: 0.4,
       },
     ],

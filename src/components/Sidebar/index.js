@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css';
 import { NavLink, useLocation } from 'react-router-dom';
-import logo from '../../img/logo-lumi.png'; // Importando a imagem diretamente
+import logo from '../../img/logo.png'; // Importando a imagem diretamente
 
 const Sidebar = () => {
   const { pathname } = useLocation(); 
@@ -18,23 +18,13 @@ const Sidebar = () => {
       </div>
       
       <ul className="nav-menu">
-        <NavLink 
-          className='link' 
-          to='/' 
-          onClick={() => handleSetActive('/')} 
-          activeClassName="active" // Usando activeClassName do NavLink
-        >
+        <NavLink className='link' to='/' onClick={() => handleSetActive('/')} >
           <li className={active === '/' ? 'active' : ''}>
             <i className="fas fa-tachometer-alt"></i>Dashboard
           </li>
         </NavLink> 
 
-        <NavLink 
-          className='link' 
-          to='/faturas' 
-          onClick={() => handleSetActive('/faturas')} 
-          activeClassName="active" // Usando activeClassName do NavLink
-        >
+        <NavLink className='link' to='/faturas' onClick={() => handleSetActive('/faturas')}  >
           <li className={active === '/faturas' ? 'active' : ''}>
             <i className="fas fa-file-invoice"></i>Faturas
           </li>
