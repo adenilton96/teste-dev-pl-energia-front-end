@@ -65,12 +65,12 @@ Para instalar as dependências do projeto, execute o seguinte comando:
 1. Clone o repositório
    
    ```bash
-    git clone https://github.com/adenilton96/teste-dev-pl-lumi-front-end
+    git clone https://github.com/adenilton96/teste-dev-pl-energia-front-end.git
 
 2. Navegue até o diretório do projeto:
     
     ```bash
-    cd teste-dev-pl-lumi-front-end
+    cd teste-dev-pl-energia-front-end
 
 3. Instale as dependências:
 
@@ -86,5 +86,5 @@ Para instalar as dependências do projeto, execute o seguinte comando:
 
 Pra utiliza este projetio e nessesario fazer o instalação e subir a API na porta **8000**
 
-O codigo da API esta no git **https://github.com/adenilton96/Teste-Dev-PL-Lumi** 
+O codigo da API esta no git **https://github.com/adenilton96/teste-dev-pl-energia-back-end-api** 
 
